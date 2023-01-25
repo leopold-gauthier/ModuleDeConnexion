@@ -1,0 +1,96 @@
+body{
+    background-color: rgba(0, 0, 0, 0.881);
+    color:white;
+    border: 2px rgba(245, 176, 47, 0.742) solid;
+    /* height: 100vh; */
+}
+header{
+    color: white;
+
+}
+main{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    border: 2px rgba(245, 176, 47, 0.742) solid;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6%;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav a{
+    font-size: xx-large;
+    color:rgba(245, 176, 47, 0.742);
+}
+
+h1{
+    font-size: xx-large;
+    color: white;
+}
+
+a{
+    color:rgba(245, 176, 47, 0.742);
+    text-decoration: none;
+}
+label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    text-align: right;
+  }
+
+.bouton{
+    background-color: rgba(245, 176, 47, 0.742);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10% 0% 10% 0%;
+}
+
+footer{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgba(245, 176, 47, 0.742);
+
+}
+footer a{
+    font-size: xx-large;
+}
+
+/* PAGE EDIT PROFILE & INSCRIPTION*/
+
+
+
+#editelement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    
+    
+}
+ 
+
+.editelement{
+    margin-top:10%;
+}
