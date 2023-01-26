@@ -14,7 +14,7 @@
         }
     } else { ?>
         <a href="./index.php">ACCUEIL</a>
-        <a href="./connexion.php">SE CONNECTER</a>
+        <a href="./connexion.php">CONNECTER</a>
         <a href="./inscription.php">INSCRIPTION</a>
     <?php
     }
