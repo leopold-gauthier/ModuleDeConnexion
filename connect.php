@@ -13,3 +13,5 @@ $mysqli = new mysqli('localhost', 'root', '', 'moduleconnexion');
 if ($mysqli === false) {
     die("ERREUR : Impossible de se connecter. " . mysqli_connect_error());
 }
+
+require_once("./function/function.php");

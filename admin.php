@@ -7,6 +7,8 @@ include "connect.php";
 $request = $mysqli->query('SELECT `login` , `prenom` , `nom`, `password` FROM utilisateurs');
 $result = $request->fetch_all(MYSQLI_ASSOC);
 ?>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +19,9 @@ $result = $request->fetch_all(MYSQLI_ASSOC);
 </head>
 
 <body>
-    <header><?php require "header_inc.php" ?></header>
+    <header>
+        <?php require "header_inc.php" ?>
+    </header>
     <main>
         <table>
             <thead>
@@ -31,24 +35,14 @@ $result = $request->fetch_all(MYSQLI_ASSOC);
             <tbody>
                 <?php for ($i = 0; $i < sizeof($result); $i++) : ?>
                     <tr>
-                        <td><?= $result[$i]['nom'] ?></td>
-                        <td><?= $result[$i]['prenom'] ?></td>
-                        <td><?= $result[$i]['password'] ?></td>
                         <td><?= $result[$i]['login'] ?></td>
+                        <td><?= $result[$i]['prenom'] ?></td>
+                        <td><?= $result[$i]['nom'] ?></td>
+                        <td><?= $result[$i]['password'] ?></td>
                     </tr>
                 <?php endfor; ?>
             </tbody>
         </table>
-        <style>
-            table {
-                border-collapse: collapse;
-            }
-
-            th,
-            td {
-                border: 1px solid;
-            }
-        </style>
     </main>
     <footer>
         <?php include("./footer_inc.php") ?>
@@ -56,3 +50,20 @@ $result = $request->fetch_all(MYSQLI_ASSOC);
 </body>
 
 </html>
+
+<style>
+    table {
+        margin: 5% 0% 5% 0%;
+        border-collapse: collapse;
+    }
+
+    th {
+        color: rgba(245, 176, 47, 0.742);
+        border: 1px rgba(245, 176, 47, 0.742) solid;
+    }
+
+    td {
+        color: white;
+        border: 1px rgba(245, 176, 47, 0.742) solid;
+    }
+</style>
