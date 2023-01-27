@@ -40,7 +40,6 @@
         //connexion à la base de données:
         include './connect.php';
         //par défaut, on affiche le formulaire (quand il validera le formulaire sans erreur avec l'inscription validée, on l'affichera plus)
-        $AfficherFormulaire = 1;
         //traitement du formulaire:
         if (isset($_POST['login'], $_POST['prenom'], $_POST['nom'], $_POST['password'])) { //l'utilisateur à cliqué sur "S'inscrire", on demande donc si les champs sont défini avec "isset"
             if (empty($_POST['login']) || empty($_POST['prenom']) || empty($_POST['nom']) || empty($_POST['password']) || empty($_POST['cpassword'])) { //le champ login est vide, on arrête l'exécution du script et on affiche un message d'erreur
@@ -63,10 +62,6 @@
                     $AfficherFormulaire = 0;
                 }
             }
-        }
-        if ($AfficherFormulaire == 1) {
-        ?>
-        <?php
         }
         ?>
     </main>
